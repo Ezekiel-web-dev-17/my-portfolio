@@ -6,9 +6,9 @@ import { useState } from "react";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <nav>
+    <nav className="fixed -top-3 right-0 w-full md:px-9 bg-black py-3">
       <div className="justify-between items-center hidden md:flex px-9">
-        <Link to="/" className="font-bold text-3xl">
+        <Link to="/" className="font-bold text-3xl mt-3">
           TABUKE EZEKIEL
         </Link>
 
