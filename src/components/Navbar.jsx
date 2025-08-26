@@ -1,0 +1,66 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import menu from "../../src/assets/menu.svg";
+import { useState } from "react";
+
+const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  return (
+    <nav>
+      <div className="justify-between items-center hidden md:flex px-9">
+        <Link to="/" className="font-bold text-3xl">
+          TABUKE EZEKIEL
+        </Link>
+
+        <ul className="decoration-0 flex items-center gap-4 cursor-pointer">
+          <li>
+            <Link to="#work">Work</Link>
+          </li>
+          <li>
+            <Link to="#about">About</Link>
+          </li>
+          <li>
+            <Link to="#contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div className="flex justify-between items-center py-1 px-4 md:hidden relative bg-black z-20 w-full">
+          <Link to="/" className="font-bold text-xl">
+            TABUKE EZEKIEL
+          </Link>
+
+          <img
+            src={menu}
+            alt="menu icon"
+            className="cursor-pointer"
+            onClick={() => setOpenMenu(!openMenu)}
+          />
+        </div>
+
+        {openMenu && (
+          <ul className="decoration-0 w-3/5 px-5 h-screen flex flex-col items-start gap-4 cursor-pointer absolute top-0 pt-24 bg-gray-700 z-10 right-0">
+            <li onClick={() => setOpenMenu(false)}>
+              <Link className="border-b-2 w-full border-gray-400" to="#work">
+                Work
+              </Link>
+            </li>
+            <li onClick={() => setOpenMenu(false)}>
+              <Link className="border-b-2 w-full border-gray-400" to="#about">
+                About
+              </Link>
+            </li>
+            <li onClick={() => setOpenMenu(false)}>
+              <Link className="border-b-2 w-full border-gray-400" to="#contact">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        )}
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
