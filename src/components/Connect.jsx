@@ -106,7 +106,7 @@ const Connect = () => {
 
         <button
           type="submit"
-          className="px-6 py-2 md:px-10 md:py-5 rounded-4xl font-bold text-[16px] bg-[#D3E97A] border-0 text-[#0A0A0A]"
+          className="px-6 py-2 md:px-8 md:py-3 rounded-4xl font-bold text-[16px] bg-[#D3E97A] border-0 text-[#0A0A0A]"
         >
           SUBMIT
         </button>

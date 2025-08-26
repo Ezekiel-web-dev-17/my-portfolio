@@ -6,7 +6,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <nav className="fixed -top-3 right-0 w-full md:px-9 bg-black py-3">
+    <nav className="fixed -top-3 right-0 w-full md:px-9 md:py-3 bg-black">
       <div className="justify-between items-center hidden md:flex px-9">
         <Link to="/" className="font-bold text-3xl mt-3">
           TABUKE EZEKIEL
@@ -26,7 +26,7 @@ const Navbar = () => {
       </div>
 
       <div>
-        <div className="flex justify-between items-center py-1 px-4 md:hidden relative bg-black z-20 w-full">
+        <div className="flex justify-between items-center pt-3 px-4 md:hidden relative bg-black z-20 w-full">
           <Link to="/" className="font-bold text-xl">
             TABUKE EZEKIEL
           </Link>
