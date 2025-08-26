@@ -21,7 +21,7 @@ const HeroComp = () => {
         <div className="flex gap-4 mt-6 items-center">
           <button
             type="button"
-            className="bg-[#D3E97A] pe-1 ps-4 py-0.5 font-bold text-black text-[16px] flex gap-3 rounded-4xl max-h-fit text-nowrap items-center"
+            className="bg-[#D3E97A] pe-1 ps-4 py-0.5 font-bold text-black text-[16px] flex gap-3 rounded-4xl max-h-fit text-nowrap items-center cursor-pointer"
           >
             Contact me
             <img className="md:hidden" src={up} alt="Call me up." />

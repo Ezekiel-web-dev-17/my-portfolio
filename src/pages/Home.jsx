@@ -5,11 +5,11 @@ import HeroComp from "../components/HeroComp";
 
 const Home = () => {
   return (
-    <div>
+    <main>
       <HeroComp />
       <Featured />
       <About />
-    </div>
+    </main>
   );
 };
 

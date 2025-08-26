@@ -18,6 +18,8 @@ const Connect = () => {
 
     setConnectForm({ ...connectForm, [e.target.name]: e.target.value });
   };
+
+  const download = () => {};
   return (
     <footer className="flex flex-col md:flex-row md:justify-between md:min-w-1/2 text-start border-t-2 border-t-[#484848] py-16 px-5 md:px-20 gap-y-20">
       <div className="flex flex-col gap-4 items-start">
@@ -27,18 +29,21 @@ const Connect = () => {
           Say hello at{" "}
           <a
             href="mailto:tabukeezekiel9@gmail.com"
-            className="underline underline-offset-4 decoration-[#D3E97A]"
+            className="underline underline-offset-4 decoration-[#D3E97A] cursor-pointer"
           >
             tabukeezekiel9@gmail.com
           </a>
           <br />
           For more info, here's my{" "}
-          <a
-            href=""
-            className="underline underline-offset-4 decoration-[#D3E97A]"
+          <span
+            className="underline underline-offset-4 decoration-[#D3E97A] cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              download();
+            }}
           >
             resume
-          </a>
+          </span>
         </p>
 
         <div className="social-connect gap-9 mt-7 flex items-center">
