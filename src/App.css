@@ -1,16 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&display=swap");
 #root {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   box-sizing: border-box;
 }
 /* manrope inter */
-@media (max-width: 767px) {
-  #root {
-    padding: 0rem;
-  }
-}
 
 body {
   background: #000;
