@@ -51,7 +51,7 @@ const Featured = () => {
   return (
     <section
       id="work"
-      className="px-4 lg:px-20 py-16 flex flex-col gap-16 border-y-2 border-y-[#484848]"
+      className="px-4 md:px-14 lg:px-20 py-16 flex flex-col gap-16 border-y-2 border-y-[#484848]"
     >
       <div className="text-start gap-16 flex flex-col">
         <div className="gap-3 flex flex-col items-start">

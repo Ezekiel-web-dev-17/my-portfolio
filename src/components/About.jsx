@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col md:flex-row md:py-15 gap-16 px-4 xl:px-20 mb-4 xl:items-start xl:flex-row xl:justify-between xl:pt-20 xl:mb-44"
+      className="flex flex-col md:flex-row md:py-15 gap-16 px-4 md:px-14 xl:px-20 mb-4 xl:items-start xl:flex-row xl:justify-between xl:pt-20 xl:mb-44"
     >
       <h2
         className="hidden xl:block font-normal text-[101px] text-nowrap"

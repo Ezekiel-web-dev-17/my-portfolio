@@ -23,7 +23,7 @@ const Connect = () => {
   return (
     <footer
       id="contact"
-      className="flex flex-col md:flex-row md:justify-between md:min-w-1/2 text-start border-t-2 border-t-[#484848] py-16 px-5 lg:px-20 gap-y-20"
+      className="flex flex-col md:flex-row md:justify-between md:min-w-1/2 text-start border-t-2 border-t-[#484848] py-16 px-5 md:px-14 lg:px-20 gap-y-20"
     >
       <div className="flex flex-col gap-4 items-start">
         <h2 className="text-4xl font-normal">LET'S CONNECT</h2>
@@ -67,7 +67,7 @@ const Connect = () => {
         <p className="hidden md:block mt-72">© 2025 Tabuke Ezekiel</p>
       </div>
 
-      <form className=" flex flex-col items-start gap-6 md:min-w-1/2">
+      <form className=" flex flex-col items-start gap-6 md:min-w-2/5 lg:min-w-1/2">
         <div className="flex flex-col gap-2 text-start w-full">
           <label htmlFor="">Name</label>
           <input

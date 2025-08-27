@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const HeroComp = () => {
   return (
-    <header className="px-4 lg:px-20 flex flex-col gap-12 items-center py-15 md:flex-row">
+    <header className="px-4 md:px-14 lg:px-20 flex flex-col gap-12 items-center py-15 md:flex-row">
       <div className="flex flex-col gap-2 text-start text-white">
         <h1 className="font-normal text-6xl">
           HI, I AM <br />
