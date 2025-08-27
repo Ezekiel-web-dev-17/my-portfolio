@@ -40,28 +40,37 @@ const Navbar = () => {
         </div>
 
         {openMenu && (
-          <ul className="decoration-0 w-3/5 px-5 h-screen flex flex-col items-start gap-4 cursor-pointer absolute top-0 pt-24 bg-gray-700 z-10 right-0">
+          <ul className="decoration-0 w-3/5 px-5 h-screen flex flex-col items-start gap-4 cursor-pointer absolute top-0 pt-24 bg-gray-700/30 backdrop-blur-md z-10 right-0">
             <li onClick={() => setOpenMenu(false)}>
               <Link
                 to="/"
-                className="border-b-2 w-full border-gray-400"
+                className="border-b-2 w-full border-gray-400 text-[16px]"
                 href="#work"
               >
                 Home
               </Link>
             </li>
             <li onClick={() => setOpenMenu(false)}>
-              <a className="border-b-2 w-full border-gray-400" href="#work">
+              <a
+                className="border-b-2 w-full border-gray-400 text-[16px]"
+                href="#work"
+              >
                 Work
               </a>
             </li>
             <li onClick={() => setOpenMenu(false)}>
-              <a className="border-b-2 w-full border-gray-400" href="#about">
+              <a
+                className="border-b-2 w-full border-gray-400 text-[16px]"
+                href="#about"
+              >
                 About
               </a>
             </li>
             <li onClick={() => setOpenMenu(false)}>
-              <a className="border-b-2 w-full border-gray-400" href="#contact">
+              <a
+                className="border-b-2 w-full border-gray-400 text-[16px]"
+                href="#contact"
+              >
                 Contact
               </a>
             </li>

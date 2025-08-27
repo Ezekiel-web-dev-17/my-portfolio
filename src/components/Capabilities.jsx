@@ -33,26 +33,26 @@ const Capabilities = () => {
             blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at
             purus faucibus tristique ut et dolor.
           </p>
-          <ul className="flex flex-4 gap-4 pt-6 flex-wrap">
-            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848]">
+          <ul className="flex flex-4 gap-4 pt-6 flex-wrap manrope">
+            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848] text-[16px] manrope font-bold">
               HTML
             </li>
-            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848]">
+            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848] text-[16px] manrope font-bold">
               CSS
             </li>
-            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848]">
+            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848] text-[16px] manrope font-bold">
               JAVASCRIPT
             </li>
-            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848]">
+            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848] text-[16px] manrope font-bold">
               JQUERY
             </li>
-            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848]">
+            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848] text-[16px] manrope font-bold">
               ACCESSIBILITY
             </li>
-            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848]">
+            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848] text-[16px] manrope font-bold">
               FIGMA
             </li>
-            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848] text-nowrap">
+            <li className="rounded-4xl px-4 py-2 max-h-fit border-1 border-[#484848] text-nowrap text-[16px] manrope font-bold">
               TAILWIND CSS
             </li>
           </ul>

@@ -4,8 +4,12 @@ import twitter from "../../src/assets/twitter.svg";
 import instagram from "../../src/assets/intagram.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-toastify";
+import LoaderComp from "./LoaderComp";
 
 const Connect = () => {
+  const [loading, setLoading] = useState(false);
   const [connectForm, setConnectForm] = useState({
     name: "",
     email: "",
@@ -19,10 +23,37 @@ const Connect = () => {
     setConnectForm({ ...connectForm, [e.target.name]: e.target.value });
   };
 
-  const download = () => {};
+  const submitComment = async (e) => {
+    e.preventDefault();
+    try {
+      setLoading(true);
+      const res = await axios.post(
+        "https://portfolio-website-pzn1.onrender.com/api/v1/comment",
+        connectForm
+      );
+
+      setConnectForm({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+      if (res?.data?.success) {
+        toast.success("Thank you for your comment.");
+      }
+
+      setLoading(false);
+    } catch (error) {
+      toast.error(error?.response?.data?.message || "An Error occured.");
+      setLoading(false);
+    }
+  };
+
   return (
     <footer
       id="contact"
+      onSubmit={submitComment}
       className="flex flex-col md:flex-row md:justify-between md:min-w-1/2 text-start border-t-2 border-t-[#484848] py-16 px-5 md:px-14 lg:px-20 gap-y-20"
     >
       <div className="flex flex-col gap-4 items-start">
@@ -38,15 +69,13 @@ const Connect = () => {
           </a>
           <br />
           For more info, here's my{" "}
-          <span
+          <a
             className="underline underline-offset-4 decoration-[#D3E97A] cursor-pointer"
-            onClick={(e) => {
-              e.preventDefault();
-              download();
-            }}
+            href="/img2.jpg"
+            download="MY_RESUME"
           >
             resume
-          </span>
+          </a>
         </p>
 
         <div className="social-connect gap-9 mt-7 flex items-center">
@@ -111,12 +140,18 @@ const Connect = () => {
             maxLength="400"
           ></textarea>
         </div>
-
         <button
           type="submit"
-          className="px-6 py-2 md:px-8 md:py-3 rounded-4xl font-bold text-[16px] bg-[#D3E97A] border-0 text-[#0A0A0A]"
+          className="manrope flex items-center gap-3 px-6 py-2 md:px-8 md:py-3 rounded-4xl cursor-pointer bg-[#D3E97A] border-0 text-[#0A0A0A]"
         >
-          SUBMIT
+          <p className=" font-bold text-[16px] " style={{ color: "#0A0A0A" }}>
+            SUBMIT
+          </p>
+          {loading && (
+            <div>
+              <LoaderComp />
+            </div>
+          )}
         </button>
       </form>
 

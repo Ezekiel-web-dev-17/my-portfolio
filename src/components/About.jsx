@@ -14,7 +14,7 @@ const About = () => {
       >
         ABOUT ME
       </h2>
-      <div className="text text-start flex flex-col gap-6 xl:w-1/2">
+      <div className="text text-start flex flex-col gap-6 xl:w-3/5 xl:ps-9 manrope">
         <div className="text-desk flex flex-col gap-4">
           <strong
             className="hidden xl:block font-medium text-[32px]"

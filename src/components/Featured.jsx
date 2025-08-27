@@ -71,8 +71,11 @@ const Featured = () => {
         </div>
 
         <div className="flex flex-col gap-30">
-          {projectDetails.map((project) => (
-            <div className="md:flex flex-row justify-between items-center gap-12">
+          {projectDetails.map((project, i) => (
+            <div
+              id={i}
+              className="md:flex flex-row justify-between items-center gap-12 manrope"
+            >
               <div className="md:min-w-1/2 rounded md:rounded-[12px] bg-[#424242] mb-7 py-12 px-6 md:px-14 md:py-36">
                 <img
                   className="rounded md:rounded-[12px] max-h-[247px] md:max-h-[306px] w-full"
@@ -82,7 +85,7 @@ const Featured = () => {
               </div>
               <div className="flex flex-col gap-8 items-start md:w-1/2">
                 <h3
-                  className="font-medium text-2xl"
+                  className="font-medium text-2xl lg:text-3xl"
                   style={{ lineHeight: "140%" }}
                 >
                   {project.topic}
