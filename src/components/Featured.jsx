@@ -49,7 +49,10 @@ const projectDetails = [
 
 const Featured = () => {
   return (
-    <section className="px-4 md:px-20 py-16 flex flex-col gap-16 border-y-2 border-y-[#484848]">
+    <section
+      id="work"
+      className="px-4 lg:px-20 py-16 flex flex-col gap-16 border-y-2 border-y-[#484848]"
+    >
       <div className="text-start gap-16 flex flex-col">
         <div className="gap-3 flex flex-col items-start">
           <h2
@@ -77,7 +80,7 @@ const Featured = () => {
                   alt="project image"
                 />
               </div>
-              <div className="flex flex-col gap-8 items-start md:min-w-1/2">
+              <div className="flex flex-col gap-8 items-start md:w-1/2">
                 <h3
                   className="font-medium text-2xl"
                   style={{ lineHeight: "140%" }}
@@ -105,7 +108,7 @@ const Featured = () => {
                   </div>
                 </div>
 
-                <div className="view-live flex gap-6">
+                <div className="view-live flex gap-6 text-nowrap">
                   <Link
                     to=""
                     className="border-b-2 pb-1 border-b-[#D3E97A] flex gap-1"

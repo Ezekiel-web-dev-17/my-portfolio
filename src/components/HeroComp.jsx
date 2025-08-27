@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const HeroComp = () => {
   return (
-    <header className="px-4 md:px-20 flex flex-col gap-12 items-center py-15 md:flex-row">
+    <header className="px-4 lg:px-20 flex flex-col gap-12 items-center py-15 md:flex-row">
       <div className="flex flex-col gap-2 text-start text-white">
         <h1 className="font-normal text-6xl">
           HI, I AM <br />
@@ -19,14 +19,16 @@ const HeroComp = () => {
         </p>
 
         <div className="flex gap-4 mt-6 items-center">
-          <button
-            type="button"
-            className="bg-[#D3E97A] pe-1 ps-4 py-0.5 font-bold text-black text-[16px] flex gap-3 rounded-4xl max-h-fit text-nowrap items-center cursor-pointer"
-          >
-            Contact me
-            <img className="md:hidden" src={up} alt="Call me up." />
-            <img className="hidden md:block" src={circle} alt="circle icon" />
-          </button>
+          <a href="#contact">
+            <button
+              type="button"
+              className="bg-[#D3E97A] pe-1 ps-4 py-0.5 font-bold text-black text-[16px] flex gap-3 rounded-4xl max-h-fit text-nowrap items-center cursor-pointer"
+            >
+              Contact me
+              <img className="md:hidden" src={up} alt="Call me up." />
+              <img className="hidden md:block" src={circle} alt="circle icon" />
+            </button>
+          </a>
           <Link
             to="/linkedIn"
             className="bg-[#222222] p-2.5 rounded-full place-content-center"
@@ -51,7 +53,7 @@ const HeroComp = () => {
           </Link>
         </div>
       </div>
-      <div className="hero-img w-full h-[400px] rounded-2xl md:w-2/3 md:h-[700px]"></div>
+      <div className="hero-img w-full h-[400px] rounded-2xl md:w-2/3 lg:h-[700px]"></div>
     </header>
   );
 };

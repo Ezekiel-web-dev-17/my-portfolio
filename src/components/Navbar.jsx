@@ -14,20 +14,20 @@ const Navbar = () => {
 
         <ul className="decoration-0 flex items-center gap-4 cursor-pointer">
           <li>
-            <Link to="#work">Work</Link>
+            <a href="#work">Work</a>
           </li>
           <li>
-            <Link to="#about">About</Link>
+            <a href="#about">About</a>
           </li>
           <li>
-            <Link to="#contact">Contact</Link>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
 
       <div>
         <div className="flex justify-between items-center pt-3 px-4 md:hidden relative bg-black z-20 w-full">
-          <Link to="/" className="font-bold text-xl">
+          <Link to="/" className="font-bold text-a">
             TABUKE EZEKIEL
           </Link>
 
@@ -42,19 +42,19 @@ const Navbar = () => {
         {openMenu && (
           <ul className="decoration-0 w-3/5 px-5 h-screen flex flex-col items-start gap-4 cursor-pointer absolute top-0 pt-24 bg-gray-700 z-10 right-0">
             <li onClick={() => setOpenMenu(false)}>
-              <Link className="border-b-2 w-full border-gray-400" to="#work">
+              <a className="border-b-2 w-full border-gray-400" href="#work">
                 Work
-              </Link>
+              </a>
             </li>
             <li onClick={() => setOpenMenu(false)}>
-              <Link className="border-b-2 w-full border-gray-400" to="#about">
+              <a className="border-b-2 w-full border-gray-400" href="#about">
                 About
-              </Link>
+              </a>
             </li>
             <li onClick={() => setOpenMenu(false)}>
-              <Link className="border-b-2 w-full border-gray-400" to="#contact">
+              <a className="border-b-2 w-full border-gray-400" href="#contact">
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         )}
