@@ -20,13 +20,14 @@ const About = () => {
             className="hidden xl:block font-medium text-[32px]"
             style={{ lineHeight: "140%" }}
           >
-            I am a front-end developer based in Sydney. Has Mechanical
-            Engineering background.{" "}
+            “The Developer I’m Becoming”— I am a Fullstack developer based in
+            Nigeria. Has Computer Science background.
           </strong>
           <p className="text-[18px] font-normal" style={{ lineHeight: "150%" }}>
-            I am a front-end developer based in Sydney looking for exciting
-            opportunities. Has Mechanical Engineering background. Likes to focus
-            on accessibility when developing.{" "}
+            I’m a full-stack web developer with a knack for turning ideas into
+            clean, functional, and user-friendly experiences. With a background
+            outside tech, I bring a unique problem-solving mindset and an eye
+            for detail. Always learning, always building.
           </p>
         </div>
         <Link

@@ -7,15 +7,16 @@ import { Link } from "react-router-dom";
 const HeroComp = () => {
   return (
     <header className="px-4 md:px-14 lg:px-20 flex flex-col gap-12 items-center py-15 md:flex-row">
-      <div className="flex flex-col gap-2 text-start text-white">
+      <div className="flex flex-col gap-2 text-start text-white lg:w-3/5">
         <h1 className="font-normal text-6xl">
           HI, I AM <br />
           TABUKE EZEKIEL.
         </h1>
 
         <p className="font-normal text-[16px] pe-3">
-          A Sydney based front-end developer passionate about building
-          accessible and user friendly websites.
+          I’m a Nigeria-based full-stack developer with a strong commitment to
+          building websites that are not only accessible and user-friendly, but
+          also secure and trustworthy for every user.
         </p>
 
         <div className="flex gap-4 mt-6 items-center">
@@ -53,7 +54,7 @@ const HeroComp = () => {
           </Link>
         </div>
       </div>
-      <div className="hero-img w-full h-[400px] rounded-2xl md:w-2/3 lg:h-[700px]"></div>
+      <div className="hero-img w-full h-[400px] rounded-2xl md:w-2/3 lg:h-[500px] lg:w-[600px]"></div>
     </header>
   );
 };

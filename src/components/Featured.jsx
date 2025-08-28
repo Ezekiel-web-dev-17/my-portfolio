@@ -1,49 +1,76 @@
 import React from "react";
 import gitHub from "../../src/assets/github.svg";
 import liveArrow from "../../src/assets/greenLiveArrow.svg";
-import { Link } from "react-router-dom";
-import projectImage from "/img7.jpg";
+import betahouse3 from "/betahouse3.png";
+import talkwebapp from "/talkwebapp.png";
+import urlShortener from "/urlShortener.png";
+import photographer from "/photographer.png";
+import conference from "/conferenceticket.png";
+import orderAPI from "/orderAPI.png";
 
 const projectDetails = [
   {
-    image: projectImage,
-    topic: "Promotional landing page for our favorite show",
-    details:
-      "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
-    year: 2023,
-    role: "Front-end Developer",
-  },
-  {
-    image: projectImage,
+    image: betahouse3,
     topic:
       "Betahouse Ecommerce website for making purchase of houses in Nigeria",
     details:
-      "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
+      "Built a sleek eCommerce platform from scratch, teaming up with a backend engineer to handle product management and payments. Shipped a mobile-first, fully responsive UI with real-time cart updates, boosting usability and conversions.",
     year: 2025,
     role: "Fullstack Developer",
+    livelink: "https://betahouse3.vercel.app",
+    gitHubLink: "https://github.com/Ezekiel-web-dev-17/betahouse3",
   },
   {
-    image: projectImage,
-    topic: "Space Tour",
-    details: "A project from frontend mentor project.",
-    year: 2024,
-    role: "Front-end Developer",
-  },
-  {
-    image: projectImage,
-    topic: "Order Manager",
+    image: talkwebapp,
+    topic: "Talk chat app",
     details:
-      "So the Admin can upload products, and view orders... User would pick what they want to buy, they checkout without payment but given some kind of reciept(with the unique no), to confirm their order in the database...(I can do the receipt). And they get a popup saying they would be contacted by the firm within 24hrs or if it urgent they should sent their reciept to the given contact infos",
+      "Built a real-time messaging app with authentication and instant message rendering—no refresh needed. Implemented JWT-based security, context-based state management, and Axios-powered API calls for smooth communication. Added routing and responsive UI to ensure seamless user experience across devices.",
+    year: 2025,
+    role: "Full-stack Developer",
+    livelink: "https://talkwebapp.vercel.app",
+    gitHubLink: "https://github.com/Ezekiel-web-dev-17/talkapp",
+  },
+  {
+    image: orderAPI,
+    topic: "Order Manager API",
+    details:
+      "The Orders API allows customers to place and manage their orders, while giving admins visibility and control over order tracking and updates. Each order is tied to one or more products, a receipt number, and customer details.",
     year: 2025,
     role: "Back-end Developer",
+    livelink: "https://documenter.getpostman.com/view/41487666/2sB3BHmUu3",
+    gitHubLink: "https://github.com/Ezekiel-web-dev-17/lasuGDG",
   },
   {
-    image: projectImage,
+    image: urlShortener,
     topic: "Url shortener Project",
     details:
-      "A website for shorteneing Urls using TinyUrl api. A fully responsive website.",
+      "Developed a snappy URL shortener with a history feature, letting users track, copy, and manage their links with ease. Enhanced usability with toasts, confirmation dialogs, undo functionality, and slick animations. Designed the interface with TailwindCSS and React, blending performance with an intuitive, modern UI.",
     year: 2025,
     role: "Front-end Developer",
+    livelink: "https://url-shortener-2-five.vercel.app",
+    gitHubLink: "https://github.com/Ezekiel-web-dev-17/url-shortener-2",
+  },
+  {
+    image: photographer,
+    topic: "Photographer Portfolio Website",
+    details:
+      "Collaborated with a photographer to craft a modern portfolio site that showcased their work in the best light. Implemented smooth gallery transitions, lazy loading for performance, and a custom contact form for seamless client inquiries.",
+    year: 2025,
+    role: "Front-end Developer",
+    livelink: "https://photographer-s-portfolio.vercel.app",
+    gitHubLink:
+      "https://github.com/Ezekiel-web-dev-17/photographer-s-portfolio",
+  },
+  {
+    image: conference,
+    topic: "Conference ticket generator",
+    details:
+      "Teamed up backend data with frontend design to deliver a dynamic ticket generator app. Pulled in attendee details (name, email, username) and rendered personalized tickets with responsive layouts. Integrated a shareable, print-ready design to create a professional, event-ready experience for users.",
+    year: 2025,
+    role: "Front-end Developer",
+    livelink: "https://conference-ticket-generator-frontend.vercel.app",
+    gitHubLink:
+      "https://github.com/Ezekiel-web-dev-17/conference-ticket-generator-frontend",
   },
 ];
 
@@ -77,11 +104,13 @@ const Featured = () => {
               className="md:flex flex-row justify-between items-center gap-12 manrope"
             >
               <div className="md:min-w-1/2 rounded md:rounded-[12px] bg-[#424242] mb-7 py-12 px-6 md:px-14 md:py-36">
-                <img
-                  className="rounded md:rounded-[12px] max-h-[247px] md:max-h-[306px] w-full"
-                  src={project.image}
-                  alt="project image"
-                />
+                <a href={project.livelink}>
+                  <img
+                    className="rounded md:rounded-[12px] max-h-[247px] md:max-h-[306px] w-full cursor-pointer"
+                    src={project.image}
+                    alt="project image"
+                  />
+                </a>
               </div>
               <div className="flex flex-col gap-8 items-start md:w-1/2">
                 <h3
@@ -112,20 +141,21 @@ const Featured = () => {
                 </div>
 
                 <div className="view-live flex gap-6 text-nowrap">
-                  <Link
-                    to=""
+                  <a
+                    href={project.livelink}
+                    to="betahouse3.vercel.app"
                     className="border-b-2 pb-1 border-b-[#D3E97A] flex gap-1"
                   >
                     <p style={{ color: "#D3E97A" }}>LIVE DEMO</p>
                     <img src={liveArrow} width="22px" alt="link to live demo" />
-                  </Link>
-                  <Link
-                    to=""
+                  </a>
+                  <a
+                    href={project.gitHubLink}
                     className="border-b-2 pb-1 border-b-[#D3E97A] flex gap-1"
                   >
                     <p style={{ color: "#D3E97A" }}> SEE ON GITHUB</p>
                     <img src={gitHub} width="22px" alt="link to github" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

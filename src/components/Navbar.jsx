@@ -14,6 +14,9 @@ const Navbar = () => {
 
         <ul className="decoration-0 flex items-center gap-4 cursor-pointer">
           <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
             <a href="#work">Work</a>
           </li>
           <li>

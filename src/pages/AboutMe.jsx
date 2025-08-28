@@ -12,7 +12,7 @@ const AboutMe = () => {
     <main>
       <section
         id="about"
-        className="lg:h-screen flex flex-col items-start md:flex-row md:justify-between pt-25 px-5 md:px-14 xl:px-20 gap-4 lg:gap-24"
+        className="lg:mb-20 flex flex-col items-start md:flex-row md:justify-between pt-25 px-5 md:px-14 xl:px-20 gap-4 lg:gap-24"
       >
         <h1
           className="font-normal text-6xl lg:text-[101px] text-nowrap"
@@ -26,8 +26,8 @@ const AboutMe = () => {
               className="font-medium text-2xl md:text-[32px] pe-10 manrope"
               style={{ lineHeight: "140%" }}
             >
-              I am a front-end developer based in Sydney. Has Mechanical
-              Engineering background.{" "}
+              “The Developer I’m Becoming”— I am a Fullstack developer based in
+              Nigeria. Has Computer Science background.{" "}
             </strong>
             <p
               className="text-[16px] lg:text-[18px] font-normal"
@@ -35,13 +35,17 @@ const AboutMe = () => {
                 lineHeight: `${window.innerWidth <= 1270 ? "150%" : "160%"}`,
               }}
             >
-              I am a front-end developer based in Sydney looking for exciting
-              opportunities. Has Mechanical Engineering background. Likes to
-              focus on accessibility when developing. Passionate and curious
-              about solving problems. Currently, I’m exploring Reactjs, Webflow
-              and a bit of Designing. While I am not programming, I enjoy
-              playing football, photography and playing Valorant. Learning more
-              to improve skill
+              Hey, I’m Ezekiel 👋—a full-stack developer who made the leap into
+              tech to create, not just consume, the web. I work with modern
+              tools like React, Node.js, and TypeScript to build responsive,
+              accessible, and user-friendly applications. My background outside
+              tech sharpened my persistence and problem-solving skills, which
+              now help me write clean, reliable code and tackle challenges with
+              patience. I’ve built projects ranging from chat apps to URL
+              shorteners, always focused on usability and real-world impact.
+              Beyond coding, I’m continually learning, experimenting, and
+              pushing myself to grow into a developer ready to take on
+              meaningful remote roles.
             </p>
           </div>
           <div className="flex max-lg:justify-between lg:gap-4 mt-6 items-center">
