@@ -71,24 +71,24 @@ const Connect = () => {
           For more info, here's my{" "}
           <a
             className="underline underline-offset-4 decoration-[#D3E97A] cursor-pointer"
-            href="/img2.jpg"
-            download="MY_RESUME"
+            href="/Resume.docx"
+            download="Ezekiel's RESUME"
           >
             resume
           </a>
         </p>
 
         <div className="social-connect gap-9 mt-7 flex items-center">
-          <Link to="">
-            <img src={linkedIn} alt="" />
+          <Link to="https://www.linkedin.com/in/tabuke-ezekiel-622792340">
+            <img src={linkedIn} alt="linkedIn icon" />
           </Link>
           <Link to="https://github.com/Ezekiel-web-dev-17/">
             <img src={github} alt="github social icon" />
           </Link>
-          <Link to="">
+          <Link to="https://x.com/Ezekiel70993598?t=zGZMp67XH57krvqhsi9Qyg&s=09">
             <img src={twitter} alt="twitter social icon" />
           </Link>
-          <Link to="">
+          <Link to="https://www.instagram.com/sebastian_172001?utm_source=qr&igsh=dWVvNTBpamFuaXc4">
             <img src={instagram} alt="instagram social icon" />
           </Link>
         </div>

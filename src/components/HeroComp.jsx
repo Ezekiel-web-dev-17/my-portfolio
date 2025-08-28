@@ -30,7 +30,7 @@ const HeroComp = () => {
             </button>
           </a>
           <Link
-            to="/linkedIn"
+            to="https://www.linkedin.com/in/tabuke-ezekiel-622792340"
             className="bg-[#222222] p-2.5 rounded-full place-content-center"
           >
             <img

@@ -45,7 +45,7 @@ const AboutMe = () => {
             </p>
           </div>
           <div className="flex max-lg:justify-between lg:gap-4 mt-6 items-center">
-            <a href="/img4.jpg" download="MyResume">
+            <a href="/Resume.docx" download="Ezekiel's Resume">
               <button
                 type="button"
                 className="bg-[#D3E97A] manrope pe-1 ps-4 py-0.5 font-bold text-black text-[14px] lg:text-[16px] flex gap-3 rounded-4xl max-h-fit text-nowrap items-center cursor-pointer max-[321px]:text-wrap"
@@ -64,7 +64,7 @@ const AboutMe = () => {
               </button>
             </a>
             <Link
-              to="/linkedIn"
+              to="https://www.linkedin.com/in/tabuke-ezekiel-622792340"
               className="bg-[#222222] p-2.5 rounded-full place-content-center"
             >
               <img
