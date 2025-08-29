@@ -103,7 +103,7 @@ const Featured = () => {
           {projectDetails.map((project, i) => (
             <div
               id={i}
-              className="md:flex flex-row justify-between items-center gap-12 manrope relative -z-10"
+              className="md:flex flex-row justify-between items-center gap-12 manrope relative z-0"
             >
               {project.extra && (
                 <div className="w-fit px-3 py-[6px] md:px-4 md:py-2 bg-[#0A0A0A] text-white font-medium text-xs md:text-[16px] absolute top-[10px] left-[10px] md:top-[16px] md:left-[16px] rounded-full z-10">
@@ -150,7 +150,6 @@ const Featured = () => {
                 <div className="view-live flex gap-6 text-nowrap">
                   <a
                     href={project.livelink}
-                    to="betahouse3.vercel.app"
                     className="border-b-2 pb-1 border-b-[#D3E97A] flex gap-1"
                   >
                     <p style={{ color: "#D3E97A" }}>LIVE DEMO</p>

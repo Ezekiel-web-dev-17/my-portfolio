@@ -1,14 +1,13 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import menu from "../../src/assets/menu.svg";
 import { useState } from "react";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const locate = useLocation();
-  console.log(locate.pathname);
+
   return (
-    <nav className="fixed -top-3 right-0 w-full md:px-9 md:py-3 bg-black">
+    <nav className="fixed -top-3 right-0 w-full md:px-9 md:py-3 bg-black z-40">
       <div className="justify-between items-center hidden md:flex px-9">
         <Link to="/" className="font-bold text-3xl mt-3">
           TABUKE EZEKIEL
