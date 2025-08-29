@@ -111,7 +111,9 @@ const FormSpree = () => {
         disabled={submit.submitting}
         className="manrope flex items-center gap-3 px-6 py-2 md:px-8 md:py-3 rounded-4xl cursor-pointer bg-[#D3E97A] border-0 text-[#0A0A0A]"
       >
-        <p className="font-bold text-[16px]">SUBMIT</p>
+        <p className="font-bold text-[16px]" style={{ color: "#0a0a0a" }}>
+          SUBMIT
+        </p>
         {submit.submitting && <LoaderComp />}
       </button>
     </form>
