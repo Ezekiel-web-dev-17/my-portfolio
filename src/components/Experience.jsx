@@ -2,7 +2,10 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <section className="flex flex-col md:flex-row md:px-14 lg:px-20 md:justify-between items-start gap-8 py-16 px-4">
+    <section
+      id="experience"
+      className="flex flex-col md:flex-row md:px-14 lg:px-20 md:justify-between items-start gap-8 py-16 px-4"
+    >
       <h2
         className="font-normal text-[43px] experience text-nowrap"
         style={{ lineHeight: "100%", letterSpacing: "-2%" }}

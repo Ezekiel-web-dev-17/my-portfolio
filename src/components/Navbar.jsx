@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import menu from "../../src/assets/menu.svg";
 import { useState } from "react";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const locate = useLocation();
+  console.log(locate.pathname);
   return (
     <nav className="fixed -top-3 right-0 w-full md:px-9 md:py-3 bg-black">
       <div className="justify-between items-center hidden md:flex px-9">
@@ -16,8 +18,27 @@ const Navbar = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li
+            className={`${
+              locate.pathname === "/about-me" ? "hidden" : "block"
+            }`}
+          >
             <a href="#work">Work</a>
+          </li>
+
+          <li
+            className={`${
+              locate.pathname === "/about-me" ? "block" : "hidden"
+            }`}
+          >
+            <a href="#capabilities">My Capabilities</a>
+          </li>
+          <li
+            className={`${
+              locate.pathname === "/about-me" ? "block" : "hidden"
+            }`}
+          >
+            <a href="#experience">My Experience</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -53,7 +74,12 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li onClick={() => setOpenMenu(false)}>
+            <li
+              className={`${
+                locate.pathname === "/about-me" ? "hidden" : "block"
+              }`}
+              onClick={() => setOpenMenu(false)}
+            >
               <a
                 className="border-b-2 w-full border-gray-400 text-[16px]"
                 href="#work"
@@ -61,6 +87,33 @@ const Navbar = () => {
                 Work
               </a>
             </li>
+            <li
+              className={`${
+                locate.pathname === "/about-me" ? "block" : "hidden"
+              }`}
+              onClick={() => setOpenMenu(false)}
+            >
+              <a
+                className="border-b-2 w-full border-gray-400 text-[16px]"
+                href="#capabilities"
+              >
+                My Capabilities
+              </a>
+            </li>
+            <li
+              className={`${
+                locate.pathname === "/about-me" ? "block" : "hidden"
+              }`}
+              onClick={() => setOpenMenu(false)}
+            >
+              <a
+                className="border-b-2 w-full border-gray-400 text-[16px]"
+                href="#experience"
+              >
+                My Experience
+              </a>
+            </li>
+
             <li onClick={() => setOpenMenu(false)}>
               <a
                 className="border-b-2 w-full border-gray-400 text-[16px]"

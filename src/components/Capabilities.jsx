@@ -5,7 +5,10 @@ import large2 from "/img8.jpg";
 
 const Capabilities = () => {
   return (
-    <section className="capabilites py-15 px-4 md:px-14 xl:px-20 flex flex-col gap-6 md:gap-10 border-b-2 border-b-[#484848]">
+    <section
+      id="capabilities"
+      className="capabilites py-15 px-4 md:px-14 xl:px-20 flex flex-col gap-6 md:gap-10 border-b-2 border-b-[#484848]"
+    >
       <div>
         <div className="hidden min-[380px]:flex items-center place-content-center gap-9 max-h-[400px] overflow-y-hidden w-full">
           <img src={large} className="rounded-2xl w-5/12" height="400px" />
