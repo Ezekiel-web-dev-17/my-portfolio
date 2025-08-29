@@ -19,6 +19,7 @@ const projectDetails = [
     role: "Fullstack Developer",
     livelink: "https://betahouse3.vercel.app",
     gitHubLink: "https://github.com/Ezekiel-web-dev-17/betahouse3",
+    extra: "Conceptual Work",
   },
   {
     image: talkwebapp,
@@ -71,6 +72,7 @@ const projectDetails = [
     livelink: "https://conference-ticket-generator-frontend.vercel.app",
     gitHubLink:
       "https://github.com/Ezekiel-web-dev-17/conference-ticket-generator-frontend",
+    extra: "Challenge",
   },
 ];
 
@@ -101,8 +103,13 @@ const Featured = () => {
           {projectDetails.map((project, i) => (
             <div
               id={i}
-              className="md:flex flex-row justify-between items-center gap-12 manrope"
+              className="md:flex flex-row justify-between items-center gap-12 manrope relative -z-10"
             >
+              {project.extra && (
+                <div className="w-fit px-3 py-[6px] md:px-4 md:py-2 bg-[#0A0A0A] text-white font-medium text-xs md:text-[16px] absolute top-[10px] left-[10px] md:top-[16px] md:left-[16px] rounded-full z-10">
+                  {project.extra}
+                </div>
+              )}
               <div className="md:min-w-1/2 rounded md:rounded-[12px] bg-[#424242] mb-7 py-12 px-6 md:px-14 md:py-36">
                 <a href={project.livelink}>
                   <img
