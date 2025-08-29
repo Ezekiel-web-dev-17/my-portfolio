@@ -48,7 +48,7 @@ const AboutMe = () => {
               meaningful remote roles.
             </p>
           </div>
-          <div className="flex max-lg:justify-between lg:gap-4 mt-6 items-center">
+          <div className="flex max-[375px]:justify-between lg:gap-4 mt-6 items-center">
             <a href="/Resume.docx" download="Ezekiel's Resume">
               <button
                 type="button"

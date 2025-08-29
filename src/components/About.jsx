@@ -34,12 +34,17 @@ const About = () => {
           to="/about-me"
           className="underline underline-offset-4 decoration-2 decoration-[#d3e97a] text-[14px] font-bold"
         >
-          <p style={{ color: "#d3e97a" }}>MORE ABOUT ME</p>
+          <p
+            className="manrope font-bold text-[16px]"
+            style={{ color: "#d3e97a", lineHeight: "150%" }}
+          >
+            MORE ABOUT ME
+          </p>
         </Link>
       </div>
 
       <img
-        className="xl:hidden max-h-[400px] w-full rounded-xl"
+        className="responsive xl:hidden max-h-[400px] w-full rounded-xl"
         src={me}
         alt="about me image"
       />

@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {openMenu && (
-          <ul className="decoration-0 w-3/5 px-5 h-screen flex flex-col items-start gap-4 cursor-pointer absolute top-0 pt-24 bg-gray-700/30 backdrop-blur-md z-10 right-0">
+          <ul className="decoration-0 w-3/5 px-5 h-screen flex flex-col items-start gap-4 cursor-pointer absolute top-0 pt-24 bg-gray-700/70 backdrop-blur-md z-10 right-0">
             <li onClick={() => setOpenMenu(false)}>
               <Link
                 to="/"

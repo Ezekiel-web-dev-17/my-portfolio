@@ -106,7 +106,7 @@ const Featured = () => {
               <div className="md:min-w-1/2 rounded md:rounded-[12px] bg-[#424242] mb-7 py-12 px-6 md:px-14 md:py-36">
                 <a href={project.livelink}>
                   <img
-                    className="rounded md:rounded-[12px] max-h-[247px] md:max-h-[306px] w-full cursor-pointer"
+                    className="responsive rounded md:rounded-[12px] max-h-[247px] md:max-h-[306px] w-full cursor-pointer"
                     src={project.image}
                     alt="project image"
                   />
