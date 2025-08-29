@@ -41,9 +41,11 @@ img {
   font-style: italic;
 }
 
-.responsive {
-  width: 250px;
-  place-self: center;
+@media (max-width: 768px) {
+  .responsive {
+    width: 250px;
+    place-self: center;
+  }
 }
 
 .hero-img {
