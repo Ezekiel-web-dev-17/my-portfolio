@@ -26,8 +26,8 @@ const Connect = () => {
           For more info, here's my{" "}
           <a
             className="underline underline-offset-4 decoration-[#D3E97A] cursor-pointer"
-            href="/Resume.docx"
-            download="Ezekiel's RESUME"
+            href="https://drive.google.com/file/d/1GGhJHwvzHBXgZj3ZG2p3mh3ulqvE5okS/view?usp=sharing"
+            target="_blank"
           >
             resume
           </a>

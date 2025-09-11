@@ -49,7 +49,11 @@ const AboutMe = () => {
             </p>
           </div>
           <div className="flex max-[375px]:justify-between lg:gap-4 mt-6 items-center">
-            <a href="/Resume.docx" download="Ezekiel's Resume">
+            <a
+              className="underline underline-offset-4 decoration-[#D3E97A] cursor-pointer"
+              href="https://drive.google.com/file/d/1GGhJHwvzHBXgZj3ZG2p3mh3ulqvE5okS/view?usp=sharing"
+              target="_blank"
+            >
               <button
                 type="button"
                 className="bg-[#D3E97A] manrope pe-1 ps-4 py-0.5 font-bold text-black text-[14px] lg:text-[16px] flex gap-3 rounded-4xl max-h-fit text-nowrap items-center cursor-pointer max-[321px]:text-wrap"
