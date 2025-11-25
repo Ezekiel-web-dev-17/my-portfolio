@@ -31,16 +31,16 @@ const projectDetails = [
     livelink: "https://talkwebapp.vercel.app",
     gitHubLink: "https://github.com/Ezekiel-web-dev-17/talkapp",
   },
-  {
-    image: orderAPI,
-    topic: "Order Manager API",
-    details:
-      "The Orders API allows customers to place and manage their orders, while giving admins visibility and control over order tracking and updates. Each order is tied to one or more products, a receipt number, and customer details.",
-    year: 2025,
-    role: "Back-end Developer",
-    livelink: "https://documenter.getpostman.com/view/41487666/2sB3BHmUu3",
-    gitHubLink: "https://github.com/Ezekiel-web-dev-17/lasuGDG",
-  },
+  // {
+  //   image: orderAPI,
+  //   topic: "Order Manager API",
+  //   details:
+  //     "The Orders API allows customers to place and manage their orders, while giving admins visibility and control over order tracking and updates. Each order is tied to one or more products, a receipt number, and customer details.",
+  //   year: 2025,
+  //   role: "Back-end Developer",
+  //   livelink: "https://documenter.getpostman.com/view/41487666/2sB3BHmUu3",
+  //   gitHubLink: "https://github.com/Ezekiel-web-dev-17/lasuGDG",
+  // },
   {
     image: urlShortener,
     topic: "Url shortener Project",
